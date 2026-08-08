@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajesh Printing Press</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #cca625; /* Gold color */
+    text-shadow: 0 0 20px #e6c138, 0 0 40px #99741a; /* Golden shadow */
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: #8c8c8c;
+    font-weight: 300;
+    letter-spacing: 4px;
+  }
+
+  /* Aesthetic Background Effect */
+  .bg-glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(204, 166, 37, 0.1) 0%, rgba(0,0,0,0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<div class="container">
+  <div class="title">Rajesh Printing Press</div>
+  <div class="subtitle">Welcome to the Website</div>
+</div>
+</body>
+<script>
+  // Redirect to index.html after 4 seconds (4000 ms)
+  setTimeout(function(){
+    // Optional: add a fade-out effect
+    document.body.style.transition = 'opacity 0.6s ease';
+    document.body.style.opacity = '0';
+    setTimeout(function(){ window.location.href = 'index.html'; }, 600);
+  }, 4000);
+</script>
+</html>
+</body>
+</html>

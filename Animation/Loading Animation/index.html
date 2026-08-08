@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liquid Text Loader</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader">
+
+    <svg viewBox="0 0 1200 400">
+
+        <defs>
+
+            <clipPath id="text-mask">
+
+                <text
+                    x="50%"
+                    y="55%"
+                    text-anchor="middle"
+                    dominant-baseline="middle"
+                    class="bg-text">
+                    AKSH'S STUDIO
+                </text>
+
+            </clipPath>
+
+        </defs>
+
+        <!-- Dark Text -->
+
+        <text
+            x="50%"
+            y="55%"
+            text-anchor="middle"
+            dominant-baseline="middle"
+            id="logo">
+            AKSH'S STUDIO
+        </text>
+        <!-- Liquid -->
+
+        <g clip-path="url(#text-mask)">
+
+            <path
+            id="wave"
+            fill="white">
+            </path>
+
+        </g>
+
+    </svg>
+
+    <div class="loading">
+        loading...
+        <span id="percent">0%</span>
+    </div>
+
+</div>
+
+<div class="bg">
+    <img src="images/setup1.jpg">
+    <img src="images/setup2.jpg">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

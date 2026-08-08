@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunDown Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="Main" data-scroll-container>
+         <section id="Page1" class="page1" data-scroll-section>
+            <nav data-scroll data-scroll-sticky data-scroll-target="#Main">
+                <img src="64d3dd9edfb41666c35b15c2_Sundown logo.svg" alt="Sundown logo">
+                <div class="nav-part2">
+                    <h4><a href="#Work">Work</a></h4>
+                    <h4><a href="#Studio">Studio</a></h4>
+                    <h4><a href="#Contact">Contact</a></h4>
+                </div>
+            </nav>
+            <div class="center">
+                <div class="left" data-scroll data-scroll-speed="1">
+                    <h3>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</h3>
+                </div>
+                <div class="right" data-scroll data-scroll-speed="-1">
+                    <h1>SPACES <br> THAT <br> INSPIRE</h1>
+                </div>
+            </div>
+            <div class="hero-shape" data-scroll data-scroll-speed="2">
+                <div class="hero1"></div>
+                <div class="hero2"></div>
+                <div class="hero3"></div>
+            </div>
+            <video autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+         </section>
+
+         <section id="Work" class="page page--work" data-scroll-section>
+             <div class="section-content" data-scroll data-scroll-call="fade" data-scroll-repeat>
+                 <h2>Featured Work</h2>
+                 <p>We create immersive spaces across hospitality, retail and residential landscapes. Every project is crafted with cinematic detail and human connection.</p>
+             </div>
+         </section>
+
+         <section id="Studio" class="page page--studio" data-scroll-section>
+             <div class="section-content" data-scroll data-scroll-call="fade" data-scroll-repeat>
+                 <h2>Studio Philosophy</h2>
+                 <p>Design should feel alive. We use movement, materiality and light to bring bold concepts to life in unexpected ways.</p>
+             </div>
+         </section>
+
+         <section id="Contact" class="page page--contact" data-scroll-section>
+             <div class="section-content" data-scroll data-scroll-call="fade" data-scroll-repeat>
+                 <h2>Let's Talk</h2>
+                 <p>Interested in building something exceptional together? Reach out and let's start a conversation.</p>
+             </div>
+         </section>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
